@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Cricket Club</title>
+    <style>
+       body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0eeea;
+}
+
+        header {
+            background: #01323f;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #f6f6f7;
+            color: #01323f;
+            border-radius: 5px;
+        }
+
+        .banner {
+            background: #02a7d1;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .banner-content {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .banner-content h1 {
+            font-size: 36px;
+            margin: 0 0 20px;
+        }
+
+        .banner-content p {
+            font-size: 18px;
+            margin: 0 0 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .cta {
+            background: #fff;
+            color: #02a7d1;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cta:hover {
+            background: #ddd;
+        }
+
+        .banner-image {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .banner-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease;
+        }
+        .team-member:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .team-member p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>Cricket Club</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="stars.html">Our Stars</a></li>
+                <li><a href="join.html">Join Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>OUR SHINING STARS</h1>
+            <p>Some of the best to Represent the Nation.<br></p>
+            <div class="buttons">
+                <button class="cta" onclick="scrollToAbout()">Explore</button>
+            </div>
+        </div>
+        <div class="banner-image">
+            <img src="logo.webp" alt="Banner Image">
+        </div>
+    </section>
+        <div class="team-member">
+            <a href="https://www.espncricinfo.com/cricketers/abrar-ahmed-734459">
+            <img src="r.png" alt="https://www.espncricinfo.com/cricketers/abrar-ahmed-734459">
+            <div>
+                <p>Abrar Ahmed</p>
+                <p>Spinner</p>
+            </div>
+            <a href="https://www.espncricinfo.com/cricketers/aamer-jamal-793441">
+                <img src="amir.jpeg" alt="https://www.espncricinfo.com/cricketers/aamer-jamal-793441">
+                <div>
+                    <p>Aamer Jamal</p>
+                    <p>All Rounder </p>
+                </div>
+        </div>
+
+</body>
+</html>

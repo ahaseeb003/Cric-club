@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Cricket Club</title>
+    <link rel="index" href="index.html">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #01323f;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #f6f6f7;
+            color: #01323f;
+            border-radius: 5px;
+        }
+
+        .banner {
+            background: #02a7d1;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .banner-content {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .banner-content h1 {
+            font-size: 36px;
+            margin: 0 0 20px;
+        }
+
+        .banner-content p {
+            font-size: 18px;
+            margin: 0 0 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .cta {
+            background: #fff;
+            color: #02a7d1;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cta:hover {
+            background: #ddd;
+        }
+
+        .banner-image {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .banner-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .content-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .content-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content-section p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>Cricket Club</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="stars.html">Our</a></li>
+            <li><a href="join.html">Join Now</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="banner">
+    <div class="banner-content">
+        <h1>Welcome to the Cricket Club</h1>
+        <p>Your home for the best cricket action.<br>The new Jersey <strong>"The Passion"</strong> Out Now...</p>
+        <div class="buttons">
+            <button class="cta" onclick="scrollToSection()">Learn More</button>
+        </div>
+    </div>
+    <div class="banner-image">
+        <img src="Jer.jpeg" alt="Banner Image">
+    </div>
+</section>
+
+<section id="about" class="content-section">
+    <img src="Falcon.jpg" alt="The Passion">
+    <p>Welcome to our Cricket Club! We are passionate about the sport and dedicated to fostering a community of players and fans. Join us for exciting matches, training sessions, and much more.Explore exclusive content and player interviews.
+    Gear up with our new merchandise and fan gear.<br>Let’s celebrate the spirit of cricket together!</p>
+</section>
+
+<script>
+    function scrollToSection() {
+        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>

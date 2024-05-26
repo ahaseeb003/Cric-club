@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Cricket Club</title>
+    <style>
+       body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbb96f;
+    
+
+
+}
+
+        header {
+            background: #01323f;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #f6f6f7;
+            color: #01323f;
+            border-radius: 5px;
+        }
+
+        .banner {
+            background: #02a7d1;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .banner-content {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .banner-content h1 {
+            font-size: 36px;
+            margin: 0 0 20px;
+        }
+
+        .banner-content p {
+            font-size: 18px;
+            margin: 0 0 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .cta {
+            background: #fff;
+            color: #02a7d1;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cta:hover {
+            background: #ddd;
+        }
+
+        .banner-image {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .banner-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>Cricket Club</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="stars.html">Our Stars</a></li>
+            <li><a href="join.html">Join Now</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="banner">
+    <div class="banner-content">
+        <h1>Who are we??</h1>
+        <p>Your home for the best cricket action.<br></p>
+        <div class="buttons">
+            <button class="cta" onclick="scrollToAbout()">Learn More</button>
+        </div>
+    </div>
+    <div class="banner-image">
+        <img src="new.jpeg" alt="Banner Image">
+    </div>
+</section>
+
+<section id="about-us" style="padding: 50px; text-align: left;">
+    <h1>About Us</h1>
+    <p>Welcome to the Cricket Club! Established in 2000. Our mission is to promote the sport of cricket and provide a platform for players of all ages and skill levels to engage in the game they love.</p>
+    <ul>
+        <li><strong>Our Mission:</strong> Our club is dedicated to fostering a love for cricket and building a strong community of players and fans. We aim to provide opportunities for everyone, from beginners to seasoned players, to improve their skills, enjoy competitive matches, and make lasting friendships.</li>
+        <li><strong>What We Offer:</strong></li>
+        <ul>
+            <li>Regular Matches: We organize weekly matches and tournaments for different age groups and skill levels, ensuring everyone gets a chance to play and compete.</li>
+            <li>Training Sessions: Our qualified coaches offer training sessions focusing on technique, fitness, and strategy to help players develop their skills and understanding of the game.</li>
+            <li>Social Events: We believe in building a strong community, and our social events are a great way for members to bond off the field. From barbecues to award nights, there's always something happening.</li>
+            <li>Youth Development: We have a robust youth program aimed at nurturing young talent. Our youth teams participate in local leagues and receive top-notch coaching to help them grow as players.</li>
+        </ul>
+        <li><strong>Our Facilities:</strong> Our club boasts excellent facilities, including well-maintained cricket pitches, practice nets, and a clubhouse with amenities for players and families. Our grounds are a hub of activity throughout the cricket season and a place where lifelong memories are made.</li>
+        <li><strong>Join Us:</strong> Whether you're a seasoned player looking to compete or a newcomer eager to learn, we welcome you to join our cricket family. Becoming a member is easy, and we offer various membership packages to suit different needs. Visit our "Join Now" page for more information on how to sign up.</li>
+        <li><strong>Contact Us:</strong> If you have any questions or need more information, feel free to contact us. We're here to help and look forward to welcoming you to the Cricket Club! <br> Contact No: 12356789<br>Email: qarnibalti@gmail.com<br>Instagram: countryClub</li>
+    </ul>
+</section>
+
+<script>
+    function scrollToAbout() {
+        document.getElementById('about-us').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
